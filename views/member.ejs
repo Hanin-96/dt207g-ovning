@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övning</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>medlemssidan</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Start</a></li>
+                <li><a href="/member">Medlem</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Medlemmar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, corporis architecto nihil nulla, itaque est aliquam porro odio molestias perspiciatis unde! Similique eos architecto, sequi nesciunt vitae sit ipsum culpa.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas ex voluptatum corrupti! Ab esse a voluptatem labore quia enim cupiditate sint fugiat ex, at culpa earum ducimus facere aut!</p>
+
+        <% if(memberList.length > 0) { %>
+            <% memberList.forEach((member) => { %>
+                <article>
+                    <h3><%= member.fullName %></h3>
+                    <p><%= member.email %></p>
+                </article>
+            <% }); %>
+        <% } else { %>
+            <p>Inga medlemmar finns i listan</p>
+        <% } %>
+    </main>
+
+</body>
+
+</html>

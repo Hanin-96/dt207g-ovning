@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: beige;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2rem;
+}
+
+p {
+    max-width: 55ch;
+}
+
+li {
+    list-style: none;
+}
